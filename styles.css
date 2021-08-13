@@ -283,46 +283,6 @@ html {
   }
 }
 
-.about {
-  padding: 46px 15px;
-  width: 100%;
-  background-color: #f4f5f7;
-}
-@media screen and (min-width: 400px) {
-  .about {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    padding: 76px 135px 77px 126px;
-  }
-}
-
-.article:last-child {
-  margin-top: 20px;
-}
-@media screen and (min-width: 400px) {
-  .article:last-child {
-    margin: 0;
-  }
-}
-@media screen and (min-width: 400px) {
-  .article {
-    width: 555px;
-  }
-}
-.article__title {
-  margin: 0;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 32px;
-}
-.article__text {
-  margin-bottom: 0;
-  margin-top: 6px;
-  font-size: 22px;
-  line-height: 32px;
-}
-
 .customers {
   display: flex;
   flex-direction: column;
