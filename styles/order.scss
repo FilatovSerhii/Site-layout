@@ -8,11 +8,11 @@
 
   background-color: $color-light;
 
-  // @include for-large-up {
-  //   padding: 73px 0px 72px 0px;
-  //   flex-direction: row;
-  //   align-items: flex-start;
-  // }
+  @include for-large-up {
+    padding: 73px 0px 72px 0px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
   &__illustration {
     max-width: 200px;
 
