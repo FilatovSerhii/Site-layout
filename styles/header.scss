@@ -1,0 +1,129 @@
+.header {
+  height: 64px;
+  width: 100%;
+
+  display: flex;
+  padding: 8px 0 8px 15px;
+  align-items: center;
+
+  background-color: $color-white;
+
+  & .logo__description {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+    }
+  }
+
+  @include for-large-up {
+    margin: auto;
+    width: 1140px;
+    height: 62px;
+
+    display: flex;
+
+    background-color: transparent;
+  }
+
+  &__menu-button {
+    margin-left: auto;
+    width: 58px;
+    height: 100%;
+
+    background: transparent;
+    border: 0;
+    border-left: 1px solid $border-color-light-dark;
+
+    @include for-large-up {
+      display: none;
+    }
+  }
+
+  &__menu-icon {
+    width: 18px;
+    height: 13px;
+    display: inline-block;
+
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
+  }
+
+  &__button {
+    display: none;
+    @include for-large-up {
+      display: block;
+    }
+  }
+}
+.logo {
+  display: flex;
+
+  &__image {
+    margin-right: 13px;
+    width: 48px;
+    height: 48px;
+
+    @include for-large-up {
+      margin-right: 15px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  &__description {
+    @include for-large-up {
+      font-size: 18px;
+      line-height: 25px;
+      color: $text-color-light-grey;
+    }
+  }
+}
+
+.navigation {
+  display: none;
+
+  &__item {
+    margin-right: 50px;
+
+    color: $text-color-dark;
+    text-decoration: none;
+    line-height: 25px;
+    font-size: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_selected {
+      font-weight: 700;
+    }
+  }
+
+  &__arrow {
+    margin-left: 11px;
+    width: 8px;
+    height: 5px;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+  }
+
+  @include for-large-up {
+    margin: 7px 56px 0px auto;
+    display: block;
+  }
+}

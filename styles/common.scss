@@ -1,0 +1,41 @@
+.action-button {
+  padding: 17px 28px 18px;
+  height: 48px;
+  width: 160px;
+
+  border-radius: 2px;
+  background-color: $color-light-blue;
+  border: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 13px;
+  color: $text-color-white;
+
+  &_wide {
+    width: 247px;
+  }
+
+  &_white {
+    background-color: $color-white;
+    color: $text-color-lighter-blue;
+    width: 158px;
+  }
+
+  &_black-text {
+    color: $text-color-black;
+  }
+}
+.hide {
+  &_desktop {
+    @include for-large-up {
+      display: none;
+    }
+  }
+
+  &_mobile {
+    @include for-large-down {
+      display: none;
+    }
+  }
+}

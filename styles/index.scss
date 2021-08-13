@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'brakepoints';
+@import 'common';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  color: $text-color-dark;
+}
+
+.page {
+  width: 100%;
+
+  @include for-large-down {
+    overflow-x: hidden;
+  }
+
+  @include for-large-up {
+    margin: auto;
+    width: 1400px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.top-section {
+  background-color: $color-beige;
+
+  @include for-large-up {
+    padding-top: 39px;
+    background-color: $color-beige;
+  }
+}
+
+@import 'header';
+@import 'headline';
+// @import 'about';
+// @import 'customers';
+// @import 'tips';
+// @import 'features';
+@import 'audience';
+@import 'order';
+@import 'footer';
