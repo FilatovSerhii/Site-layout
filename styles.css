@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .action-button {
   padding: 17px 28px 18px;
   height: 48px;
@@ -33,46 +37,8 @@
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-  font-family: "Work Sans", sans-serif;
-  color: #2b292d;
-}
-
-.page {
-  width: 100%;
-}
-@media screen and (max-width: 399px) {
-  .page {
-    overflow-x: hidden;
-  }
-}
-@media screen and (min-width: 400px) {
-  .page {
-    margin: auto;
-    width: 1400px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.top-section {
-  background-color: #f3c6bd;
-}
-@media screen and (min-width: 400px) {
-  .top-section {
-    padding-top: 39px;
-    background-color: #f3c6bd;
-  }
-}
-
 .header {
-  height: 64px;
+  height: 100%;
   width: 100%;
   display: flex;
   padding: 8px 0 8px 15px;
@@ -388,7 +354,7 @@ html {
 }
 @media screen and (min-width: 400px) {
   .audience {
-    height: 983px;
+    height: 100%;
   }
 }
 @media screen and (min-width: 400px) {
@@ -399,6 +365,7 @@ html {
 .audience__container {
   padding: 50px 15px;
   max-width: 320px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 400px) {
   .audience__container {
@@ -817,6 +784,38 @@ html {
 @media screen and (min-width: 400px) {
   .logo-vertical {
     display: none;
+  }
+}
+
+html {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  color: #2b292d;
+}
+
+.page {
+  width: 100%;
+}
+@media screen and (max-width: 399px) {
+  .page {
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 400px) {
+  .page {
+    margin: auto;
+    width: 1400px;
+    min-height: 100vh;
+  }
+}
+
+.top-section {
+  background-color: #f3c6bd;
+}
+@media screen and (min-width: 400px) {
+  .top-section {
+    padding-top: 39px;
+    background-color: #f3c6bd;
   }
 }
 

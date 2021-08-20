@@ -1,10 +1,20 @@
-@import 'variables';
-@import 'brakepoints';
-@import 'common';
-
 * {
   box-sizing: border-box;
 }
+
+@import 'variables';
+@import 'brakepoints';
+@import 'common';
+@import 'header';
+@import 'headline';
+@import 'customers';
+@import 'tips';
+@import 'audience';
+@import 'order';
+@import 'footer';
+
+
+
 
 html {
   font-size: 16px;
@@ -24,8 +34,7 @@ html {
     width: 1400px;
     min-height: 100vh;
 
-    display: flex;
-    flex-direction: column;
+    
   }
 }
 
@@ -38,10 +47,4 @@ html {
   }
 }
 
-@import 'header';
-@import 'headline';
-@import 'customers';
-@import 'tips';
-@import 'audience';
-@import 'order';
-@import 'footer';
+
